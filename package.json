@@ -1,24 +1,21 @@
 {
-  "name": "ignite-ir-boilerplate-2016",
-  "description": "Infinite Red's recommended app structure 2016",
+  "name": "ignite-pepperoni-boilerplate",
+  "description": "Pepperoni App Template by Futurice",
   "license": "MIT",
-  "repository": "infinitered/ignite",
-  "homepage": "https://github.com/infinitered/ignite",
-  "version": "0.2.1",
+  "repository": "futurice/pepperoni-app-kit",
+  "homepage": "https://github.com/futurice/pepperoni-app-kit",
+  "version": "0.0.1",
   "files": [
     "boilerplate",
     "commands",
     "templates",
     "boilerplate.js",
     "ignite.json",
-    "options.js",
-    "plugin.js",
     "screenExamples.js"
   ],
   "author": {
-    "name": "Infinite Red",
-    "email": "npm@infinite.red",
-    "url": "https://github.com/infinitered/ignite"
+    "name": "Futurice",
+    "url": "https://github.com/futurice/pepperoni-app-kit"
   },
   "scripts": {
     "lint": "standard",

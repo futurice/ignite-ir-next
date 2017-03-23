@@ -1,4 +1,3 @@
-const options = require('./options')
 const { merge, pipe, assoc, omit, __ } = require('ramda')
 
 /**
@@ -78,8 +77,10 @@ async function install (context) {
   } = context
 
   const name = parameters.third
+  const boilerplateName = print.colors.yellow('Pepperoni App')
+  const companyName = print.colors.green('Futurice')
   const spinner = print
-    .spin(`using the ${print.colors.red('Infinite Red')} boilerplate`)
+    .spin(`using the ${boilerplateName} boilerplate by ${companyName}`)
     .succeed()
 
   // attempt to install React Native or die trying
@@ -168,16 +169,6 @@ async function install (context) {
 
   spinner.stop()
 
-  // --max, --min, interactive
-  let answers
-  if (parameters.options.max) {
-    answers = options.answers.max
-  } else if (parameters.options.min) {
-    answers = options.answers.min
-  } else {
-    answers = await prompt.ask(options.questions)
-  }
-
   spinner.text = '▸ installing ignite dependencies'
   spinner.start()
   if (context.ignite.useYarn) {
@@ -201,35 +192,14 @@ async function install (context) {
   // TODO(steve):
   //   * this needs to get planned a little better.
   // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  /*
   try {
-    await system.spawn(`ignite add ir-boilerplate-2016 ${debugFlag}`, { stdio: 'inherit' })
-
-    // now run install of Ignite Plugins
-    if (answers['dev-screens'] === 'Yes') {
-      await system.spawn(`ignite add dev-screens ${debugFlag}`, {
-        stdio: 'inherit'
-      })
-    }
-
-    if (answers['vector-icons'] === 'react-native-vector-icons') {
-      await system.spawn(`ignite add vector-icons ${debugFlag}`, {
-        stdio: 'inherit'
-      })
-    }
-
-    if (answers['i18n'] === 'react-native-i18n') {
-      await system.spawn(`ignite add i18n ${debugFlag}`, { stdio: 'inherit' })
-    }
-
-    if (answers['animatable'] === 'react-native-animatable') {
-      await system.spawn(`ignite add animatable ${debugFlag}`, {
-        stdio: 'inherit'
-      })
-    }
+    await system.spawn(`ignite add pepperoni-boilerplate ${debugFlag}`, { stdio: 'inherit' })
   } catch (e) {
     ignite.log(e)
     throw e
   }
+  */
 
   await finish(context)
 }

@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import styles from './Styles/<%= props.name %>Style'
 
-export default class <%= props.name %> extends React.Component {
+export default class <%= props.name %> extends Component {
+  // Initial state
+  // this.state = {};
+
+  // Prop type warnings
+  /*
+  static propTypes = {
+    someProperty: React.PropTypes.object,
+    someSetting: React.PropTypes.bool.isRequired
+  };
+
+  // Defaults for props
+  static defaultProps = {
+    someSetting: false
+  }
+  */
 
   render () {
     return (
@@ -12,14 +27,3 @@ export default class <%= props.name %> extends React.Component {
     )
   }
 }
-
-// // Prop type warnings
-// <%= props.name %>.propTypes = {
-//   someProperty: React.PropTypes.object,
-//   someSetting: React.PropTypes.bool.isRequired
-// }
-//
-// // Defaults for props
-// <%= props.name %>.defaultProps = {
-//   someSetting: false
-// }
