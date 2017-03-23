@@ -1,5 +1,17 @@
-# Ignite IR Next
-## the latest and greatest boilerplate for Infinite Red opinions
+# ignite-pepperoni-boilerplate
+## Pepperoni boilerplate for Ignite
 
-**Previous Boilerplates**
-* [2016 aka Ignite 1.0](https://github.com/infinitered/ignite-ir-boilerplate-2016)
+:warning: Work in progress :warning:
+
+See main project here: https://github.com/futurice/pepperoni-app-kit
+
+# Getting started
+```
+git clone https://github.com/futurice/ignite-pepperoni-boilerplate
+cd ignite-pepperoni-boilerplate
+npm link
+```
+
+```
+ignite new MyApp --boilerplate ignite-pepperoni-boilerplate
+```
