@@ -6,6 +6,11 @@
 See main project here: https://github.com/futurice/pepperoni-app-kit
 
 # Getting started
+
+First follow the [Ignite install instructions](https://github.com/infinitered/ignite#arrow_down-install).
+
+Then:
+
 ```
 ignite new MyApp --boilerplate ignite-pepperoni-boilerplate
 ```
