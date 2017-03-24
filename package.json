@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "futurice/pepperoni-app-kit",
   "homepage": "https://github.com/futurice/pepperoni-app-kit",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "files": [
     "boilerplate",
     "commands",
