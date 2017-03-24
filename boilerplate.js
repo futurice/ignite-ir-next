@@ -102,6 +102,9 @@ async function install (context) {
   filesystem.copy(`${__dirname}/boilerplate/.babelrc`, `${process.cwd()}/.babelrc`, {
     overwrite: true
   })
+  filesystem.copy(`${__dirname}/boilerplate/.eslintrc`, `${process.cwd()}/.eslintrc`, {
+    overwrite: true
+  })
   spinner.stop()
 
   // generate some templates
