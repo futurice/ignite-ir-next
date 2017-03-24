@@ -1,3 +1,3 @@
 export default {
-  yellowBox: __DEV__
-}
+  yellowBox: __DEV__,
+};

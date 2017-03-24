@@ -1,4 +1,4 @@
-import Immutable from 'seamless-immutable'
+import Immutable from 'seamless-immutable';
 import { NavigationActions } from 'react-navigation';
 import includes from 'lodash/includes';
 
@@ -8,20 +8,20 @@ import RootNavigator from '../Navigation/RootNavigator';
 // https://github.com/react-community/react-navigation/issues/135#issuecomment-276684675
 function paramsEqual(params1: ?NavigationParams, params2: ?NavigationParams) {
   if (params1 == params2) {
-    return true
+    return true;
   }
 
   if (!params1 || !params2 || Object.keys(params1).length != Object.keys(params2).length) {
-    return false
+    return false;
   }
 
-  for (let [key, value] of Object.entries(params1)) {
+  for (const [key, value] of Object.entries(params1)) {
     if (value !== params2[key]) {
-      return false
+      return false;
     }
   }
 
-  return true
+  return true;
 }
 
 export const reducer = (state, action) => {
@@ -39,7 +39,7 @@ export const reducer = (state, action) => {
       return state;
     }
 
-    return Immutable(RootNavigator.router.getStateForAction(action, state.asMutable({deep: true})));
+    return Immutable(RootNavigator.router.getStateForAction(action, state.asMutable({ deep: true })));
   }
 
   return state;
