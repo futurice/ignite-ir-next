@@ -4,14 +4,15 @@
     "node": true,
     "jest": true
   },
-  "globals": [
-    "describe",
-    "it",
-    "navigator",
-    "XMLHttpRequest",
-    "FormData",
-    "React$Element"
-  ],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "__DEV__": true,
+    "navigator": true,
+    "XMLHttpRequest": true,
+    "FormData": true,
+    "React$Element": true
+  },
   "extends": "airbnb",
   "parser": "babel-eslint",
   "rules": {

@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { ScrollView, Text, Button } from 'react-native';
 
 export default class LaunchScreen extends Component {
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func.isRequired,
+    }).isRequired,
+  };
+
   render() {
     const { navigate } = this.props.navigation;
 

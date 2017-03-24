@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import { autoRehydrate } from 'redux-persist';
-import Config from '../Config/DebugConfig';
+
 import RehydrationServices from '../Services/RehydrationServices';
 import ReduxPersist from '../Config/ReduxPersist';
 

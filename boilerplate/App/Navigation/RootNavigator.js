@@ -1,4 +1,3 @@
-import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
 import LaunchScreen from '../Containers/LaunchScreen';
@@ -10,6 +9,8 @@ import LaunchScreen from '../Containers/LaunchScreen';
  * You may nest other navigators inside the root navigator if you want to create more complex
  * navigation patterns.
  */
-export default RootNavigator = StackNavigator({
+const RootNavigator = StackNavigator({
   Launch: { screen: LaunchScreen },
 });
+
+export default RootNavigator;

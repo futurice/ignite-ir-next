@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { View, StatusBar, ActivityIndicator } from 'react-native';
 import { addNavigationHelpers } from 'react-navigation';
 import { connect } from 'react-redux';
@@ -21,6 +21,8 @@ const mapDispatchToProps = dispatch => ({
   dispatch,
 });
 
+// Don't care about propTypes in redux connected containers
+/* eslint-disable react/prop-types */
 @connect(mapStateToProps, mapDispatchToProps)
 export default class RootContainer extends Component {
 
